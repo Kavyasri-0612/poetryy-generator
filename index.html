@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poem-Generator</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <link rel="stylesheet" href="poem.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div>
+          <h1>✒️Poem generator✒️</h1>
+        </div>
+      </header>
+      <div class="form-container">
+        <form id="poem-generator">
+          <input
+            type="text"
+            id="instructions"
+            autofocus
+            class="instructions"
+            required
+            placeholder="Enter the topic of the poem?"
+            autocomplete="off"
+          />
+          <input
+            type="submit"
+            value="Generate Poem"
+            class="btn"
+            id="submit-button"
+          />
+        </form>
+        <div class="hint">i.e: Flower, Paris or Cheese</div>
+      </div>
+      <div id="poem" class="poem"></div>
+    </div>
+    <script src="poem.js"></script>
+  </body>
+</html>
